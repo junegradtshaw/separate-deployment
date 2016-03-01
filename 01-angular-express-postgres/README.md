@@ -353,7 +353,7 @@ You've come a _long_ way since you spun up your first Angular app (remember the 
 That app is a mess when you consider how much you now know about MVC architecture.
 
 * refactor __Reddit Clone__ to be more modular and use an Express / Postgres backend.
-* Your __Reddit Clone__ should have full CRUD operations for Posts and Comments.
+* Your __Reddit Clone__ should have the same functionality but now use a postgres to persist data
 
 ## Deploy Your App
 
