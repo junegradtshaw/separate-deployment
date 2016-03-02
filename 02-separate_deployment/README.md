@@ -55,7 +55,9 @@ You've just stumbled upon a minor detail needed to navigate this app.   our pack
 
 There's a reason we're having this conversation, so thank you for your patience !!!! It directly relates to getting our app running.  We know that EXPRESS APP root is /separation. Based on that knowledge, get yourself to where you need to be to run your migration and your seeds. 
 
-#### ⛳️ Milestone 1: You have run your migrations, your seeds, and you have also figured out where to run the nodemon command to run the entire app. When you reach this milestone, take a jump back.  Kiss yourself. You're ready for step 2. 
+#### ⛳️ Milestone 1: You have run your migrations, your seeds, and you have also figured out where to run the nodemon command to run the entire app. 
+
+When you reach this milestone, take a jump back.  Kiss yourself. You're ready for step 2. 
 
 
 #### 🍎Step 2: 
@@ -63,6 +65,8 @@ There's a reason we're having this conversation, so thank you for your patience 
 * You should see the json output of all of your cats. Visit http://localhost:3000/cats/1 to see a single cat
 * cd into your ang_app folder
 * run _firebase serve_ in that folder to start an http server ( similar to Simple Http Server ) 
-
+* make sure that your CORS Chrome browser plugin is active and running: 
+* ![](https://github.com/gSchool/angular-unit-3-g18/blob/master/02-separate_deployment/cors.png)
+* Visit localhost:5000 .  You should see that your Angular app is hitting the Express API. 
 
 
