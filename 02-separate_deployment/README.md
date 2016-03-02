@@ -21,8 +21,52 @@ Here is a graphic that outlines what we will be doing.
 ![](https://github.com/gSchool/angular-unit-3-g18/blob/master/02-separate_deployment/layout2.png)
 ## another config option:  anything you can get to work ! 
 
+You will work through this section of the repo using milestones
+
+#### 🍎Step 1: 
+
+* Assuming you have this repo forked and cloned, cd into the 02-separate_deployment folder
+* create a database called animals in postgres
+*  in the 02-separate-deployment folder, attempt to run knex migrate:latest --env development
+*  You will get an error: _No knexfile found in this directory. Specify a path with --knexfile_ 
+*  Refer to the pretty diagram with the folders above. Note that there's something different going on with our package.json
+
+``` 
+
+{
+  "name": "separation",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./separation/bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.13.2",
+    "cookie-parser": "~1.3.5",
+    ....etc ... etc..
+  }
+}
+
+```
+
+Under scripts: start is pointing to separation/bin/www instead of just ./bin/www. Why is this ?  what does this do ? 
+
+You've just stumbled upon a minor detail needed to navigate this app.   our package.json is located in the root folder, which also contains our .git tracking.  This root foldler will be deployed to Heroku.  Heroku needs to see a package.json file in order to know what kind of app this is. (It needs to know that this is a Node app) .    There are ways to use a Procfile to tell Heroku where to find the package.json file. However, its also possible to simply put the package.json file in the root directory and point to the separation folder as to where our app actually lives. 
+
+There's a reason we're having this conversation, so thank you for your patience !!!! It directly relates to getting our app running.  We know that EXPRESS APP root is /separation. Based on that knowledge, get yourself to where you need to be to run your migration and your seeds. 
+
+#### ⛳️ Milestone 1: You have run your migrations, your seeds, and you have also figured out where to run the nodemon command to run the entire app. 
+
+When you reach this milestone, take a jump back.  Kiss yourself. You're ready for step 2. 
 
 
-
+#### 🍎Step 2: 
+* Now that you have a server running, visit http://localhost:3000/cats
+* You should see the json output of all of your cats. Visit http://localhost:3000/cats/1 to see a single cat
+* cd into your ang_app folder
+* run _firebase serve_ in that folder to start an http server ( similar to Simple Http Server ) 
+* make sure that your CORS Chrome browser plugin is active and running: 
+* ![](https://github.com/gSchool/angular-unit-3-g18/blob/master/02-separate_deployment/cors.png)
+* Visit localhost:5000 .  You should see that your Angular app is hitting the Express API. 
 
 
