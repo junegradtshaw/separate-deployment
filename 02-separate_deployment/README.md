@@ -68,7 +68,7 @@ When you reach this milestone, take a jump back.  Kiss yourself. You're ready fo
 * make sure that your CORS Chrome browser plugin is active and running: 
 ![](https://github.com/gSchool/angular-unit-3-g18/blob/master/02-separate_deployment/cors.png)
 * Visit localhost:5000 .  You should see that your Angular app is hitting the Express API. 
-* Modify your Controller so that your app uses routes. ( you can use ngRoute or whichever method you desire ). 
+* Modify your Controller so that your app uses routes. ( you can use ngRoute and $routeProvider or whichever method you desire ). 
 * modify your firebase.json file to map all of your routes to /index.html... it should look  something like this : 
 
 ```
@@ -105,8 +105,15 @@ This helps your app become a 'true' single page app.  This was covered in Angula
 * Your Cat should persist in the database, which means that you have a Service or Factory sending a POST route to the Express API
 * The Express API, obviously, should be able to handle this POST route. 
 
-Question: when the EXPRESS route finishes the POST , do you think it should redirect the user on the backend ?  Why or why now ?  Think about this and discuss it with your dog.   You may not want to volunteer the information that this is a cats app. 
+Question: when the EXPRESS route finishes the POST , do you think it should redirect the user on the backend ?  Why or why now ?  Think about this and discuss it with your dog.    
 
 #### ⛳️ Milestone 3:
 You have reached milestone 3 when you can create a Cat from your Angular app that's persisted in the database. 
+
+
+
+#### 🍎Step 4: 
+
+* In your CatsController, ( or whatever you call it )  inject $location into the controller so that after a user creates a cat, it redirects them to the /cats route.
+
 
