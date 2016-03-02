@@ -1,17 +1,22 @@
 app.controller("MainController", function($scope, $http, CatService){
-  $scope.cats = "the cat gang...";
+   // no instance variables here.... 
+});
 
-  console.log("we are starting the requests ...");
+app.controller("CatsIndexController", function($scope, CatService){
   CatService.getCats().then(function(payload){
-    console.log("we are getting all Cats");
     $scope.cat_collection = payload.data;
   }, function(error){
     console.log("an error occurred");
   });
+});
 
-  CatService.getCat(1).then(function(single){
-    console.log("we are getting ONE Cat:");
-    $scope.singleCat = single.data;
+app.controller("CatsShowController", function($scope, CatService, $routeParams){
+  the_id = $routeParams.id;
+  console.log("my params are "+the_id);
+  CatService.getCat(the_id).then(function(payload){
+    console.log("we are getting ONE Cat named: "+payload.data[0].name);
+    $scope.singleCat = payload.data[0];
+  }, function(error){
+    console.log("an error occurred");
   });
-
 });
