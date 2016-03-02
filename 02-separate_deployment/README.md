@@ -116,4 +116,24 @@ You have reached milestone 3 when you can create a Cat from your Angular app tha
 
 * In your CatsController, ( or whatever you call it )  inject $location into the controller so that after a user creates a cat, it redirects them to the /cats route.
 
+#### ⛳️ Milestone 4:
+You have reached milestone 4 if you can create a new Cat through your Angular app. 
 
+
+=== STRETCH GOALS ===
+
+#### 🍎Stretch A:  
+It's a bit of typing to hand write various repetitive API calls in your service.  There's a way to inject $resource into your Service or Factory.  Look into $resource and how you can call $resource to make all of your API calls for you inside of your Angular app. $resource assumes that you have restful routes set up in your Express back end ( and I'm sure you do ! ) . Here's an example of $resource being used in a Factory: 
+
+``` 
+
+app.factory('AngelsFactory', function($resource) {
+   return $resource('http://localhost:3000/angels/:id', {id: '@id'},
+      {
+        'update': { method:'POST' }
+      }
+ );
+});
+
+```
+ 
