@@ -1,6 +1,6 @@
-### 🖖 Separation Anxiety ! 
+## 🖖Separation Anxiety ! 
 
-## before you begin, you may want to add the CORS extension to Chrome: 
+### before you begin, you may want to add the CORS extension to Chrome: 
 https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi?hl=en
 
 
@@ -15,11 +15,11 @@ The CONNECTIONS are the most important thing, because a good deal of the process
 
 Here is a graphic that outlines what we will be doing.  No reason to build any of this... it's already in the repo.  Just read and think about what we are doing. 
 
-## one config option
+### one config option
 ![](https://github.com/gSchool/angular-unit-3-g18/blob/master/02-separate_deployment/layout1.png)
-## another config option
+### another config option
 ![](https://github.com/gSchool/angular-unit-3-g18/blob/master/02-separate_deployment/layout2.png)
-## another config option:  anything you can get to work ! 
+### another config option:  (anything you can get to work !) 
 
 You will work through this section of the repo using milestones
 
