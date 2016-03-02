@@ -66,7 +66,18 @@ When you reach this milestone, take a jump back.  Kiss yourself. You're ready fo
 * cd into your ang_app folder
 * run _firebase serve_ in that folder to start an http server ( similar to Simple Http Server ) 
 * make sure that your CORS Chrome browser plugin is active and running: 
-* ![](https://github.com/gSchool/angular-unit-3-g18/blob/master/02-separate_deployment/cors.png)
+![](https://github.com/gSchool/angular-unit-3-g18/blob/master/02-separate_deployment/cors.png)
 * Visit localhost:5000 .  You should see that your Angular app is hitting the Express API. 
+* Modify your Controller so that your app uses routes. ( you can use ngRoute or whichever method you desire ). 
+* You should have /cats/ and /cats/:id routes
+
+#### ⛳️ Milestone 2:
+
+* When you add a cat in psql command line or in Postico, it should appear in your Angular app, which is pulling it from the Express api. 
+
+
+
+
+
 
 
