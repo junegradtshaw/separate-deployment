@@ -44,7 +44,9 @@ You will work through this section of the repo using milestones
     ....etc ... etc..
   }
 }
+
 ```
+
 Under scripts: start is pointing to separation/bin/www instead of just ./bin/www. Why is this ?  what does this do ? 
 
 You've just stumbled upon a minor detail needed to navigate this app.   our package.json is located in the root folder, which also contains our .git tracking.  This root foldler will be deployed to Heroku.  Heroku needs to see a package.json file in order to know what kind of app this is. (It needs to know that this is a Node app) .    There are ways to use a Procfile to tell Heroku where to find the package.json file. However, its also possible to simply put the package.json file in the root directory and point to the separation folder as to where our app actually lives. 
