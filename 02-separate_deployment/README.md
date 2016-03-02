@@ -13,7 +13,7 @@ The CONNECTIONS are the most important thing, because a good deal of the process
 * Because of this, I have included a couple of secret files for you , so you can see where these files are located.  To get this working on your end, you will have to modify my personal credentials files to get it working on your machine * . 
 
 
-Here is a graphic that outlines what we will be doing.  
+Here is a graphic that outlines what we will be doing.  No reason to build any of this... it's already in the repo.  Just read and think about what we are doing. 
 
 ## one config option
 ![](https://github.com/gSchool/angular-unit-3-g18/blob/master/02-separate_deployment/layout1.png)
