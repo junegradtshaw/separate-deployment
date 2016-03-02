@@ -57,6 +57,8 @@ There's a reason we're having this conversation, so thank you for your patience 
 #### 🍎Step 2: 
 * Now that you have a server running, visit http://localhost:3000/cats
 * You should see the json output of all of your cats. Visit http://localhost:3000/cats/1 to see a single cat
+* cd into your ang_app folder
+* run _firebase serve_ in that folder to start an http server ( similar to Simple Http Server ) 
 
 
 
