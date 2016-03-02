@@ -1,4 +1,4 @@
-###  🖖Separation Anxiety ! 
+### 🖖 Separation Anxiety ! 
 
 ## before you begin, you may want to add the CORS extension to Chrome: 
 https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi?hl=en
