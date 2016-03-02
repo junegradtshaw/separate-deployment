@@ -136,4 +136,4 @@ app.factory('AngelsFactory', function($resource) {
 });
 
 ```
- 
+That one factory will now handle ALL of your CRUD activities from the Angular end !  If you're interested in that, look it up and see if you can get it working.  Again, it assumes a restful back end, and there are a few rules in terms of how you make the calls from your controllers.  But it's a pretty useful resource and it works great. 
