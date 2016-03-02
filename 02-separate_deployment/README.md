@@ -31,7 +31,9 @@ You will work through this section of the repo using milestones
 *  You will get an error: _No knexfile found in this directory. Specify a path with --knexfile_ 
 *  Refer to the pretty diagram with the folders above. Note that there's something different going on with our package.json
 
-``` {
+``` 
+
+{
   "name": "separation",
   "version": "0.0.0",
   "private": true,
