@@ -21,6 +21,8 @@ Here is a graphic that outlines what we will be doing.
 ![](https://github.com/gSchool/angular-unit-3-g18/blob/master/02-separate_deployment/layout2.png)
 ## another config option:  anything you can get to work ! 
 
+You will work through this section of the repo using milestones
+
 
 
 
