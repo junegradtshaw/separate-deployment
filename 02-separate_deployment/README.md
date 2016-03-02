@@ -54,6 +54,9 @@ There's a reason we're having this conversation, so thank you for your patience 
 #### ⛳️ Milestone 1: You have run your migrations, your seeds, and you have also figured out where to run the nodemon command to run the entire app. When you reach this milestone, take a jump back.  Kiss yourself. You're ready for step 2. 
 
 
+#### 🍎Step 2: 
+* Now that you have a server running, visit http://localhost:3000/cats
+* You should see the json output of all of your cats. Visit http://localhost:3000/cats/1 to see a single cat
 
 
 
