@@ -2,6 +2,6 @@
 // 2. Go to knexfile and grap the environment config object.
 // 3. Export our configuration
 
-environment process.NODE_ENV || 'development'
+var environment = process.NODE_ENV || 'development'
 var config = require('../knexfile.js')[environment]
-module.exports = knex(config)
+module.exports = require('knex')(config)
